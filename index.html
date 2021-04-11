@@ -19,68 +19,73 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
     <!--css stylesheet-->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
+    <!--Jumbotron title and subtitle-->
     <header>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">What's the weather like?</h1>
                 <p class="lead">Select a city and view the 5-day weather forecast.</p>
+                <p id="currentDay"></p>
             </div>
         </div>
     </header>
 
     <!--main content-->
 
-
     <div class="container-fluid">
 
-        <div class="row">
-            <div class="col-md-4 left-side">
+        <div class="row p-3">
+            <div class="col-md-4 left-side shadow p-3 mb-4 text-light bg-dark rounded">
+
                 <!--search box-->
-                <div id="search">
+                <div id="searchCity">
                     <h2>City Search</h2>
-                    <input id="searchField" type="search" placeholder="enter city">
+                    <input id="searchField" type="search" placeholder="enter city name here">
                     <input id="searchButton" type="submit">
                 </div>
 
-                <!--search history-->
-                <div id="recentSearch">
+                <!--recent searches / search history-->
+                <div id="recentSearches" class="recent">
                     <h2>Recent Searches</h2>
                 </div>
 
             </div>
         </div>
 
-
-
-        <div id="search" class="currentDay">
-            <h3>City:</h3>
-            <h4><span id="selectArea"></span><span id="date0"></span> - <img id="icon0" alt="weather icon" scr=""></h4>
-              <p>Humidity: <spand id="select-humid"></spand>%</p>
-              <p>Wind Speed: <spand id="select-wind"></spand> Mph</p>
-              <p>UV Index: </p>
+        <!--Current day weather details-->
+        <div id="search" class="currentDay shadow p-3 mb-4 rounded">
+            <h3>City: <span id="selectArea"></span></h3>
+            <p>Date: <span id="date0"></span></p>
+            <img id="icon0" alt="weather icon" scr="">
+            <p>Humidity: <span id="humid0"></span>%</p>
+            <p>Wind Speed: <span id="wind0"></span> Mph</p>
+            <p>UV Index: <span id="uvIndex0"></span></p>
         </div>
 
-            
-            <!-- Forecast for 5 Days -->
-            <div class="container-fluid">
-                <h3>5 Day Forecast</h3>
-              <div class="row">
-                  <!-- Day 1 -->
-                  <div class="col-sm-6 col-md-6 col-lg-2 forecast">
-                    <p>Day 1</p>
-                      <img id="icon1" alt="weather icon" src="">
-                      <p>Temp: <span id="temp1"></span> &deg; F</p>
-                      <p>Wind: <span id="wind1"></span></p>
-                      <p>Humidity: <span id="humid1"></span>%</p>
-                  </div>
 
-                  <!-- Day 2 -->
-                  <div class="col-sm-6 col-md-6 col-lg-2 forecast">
+        <!-- Forecast for 5 Days -->
+        <div class="container-fluid">
+            <h3>5 Day Forecast</h3>
+            <div class="row">
+                <!-- Day 1 -->
+                <div class="col-sm-6 col-md-6 col-lg-2 forecast shadow p-3 mb-4 rounded">
+                    <p>Date: <span id="date1"></span></p>
+                    <img id="icon1" alt="weather icon" src="">
+                    <p>Temp: <span id="temp1"></span> &deg; F</p>
+                    <p>Wind: <span id="wind1"></span></p>
+                    <p>Humidity: <span id="humid1"></span>%</p>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="col-sm-6 col-md-6 col-lg-2 forecast shadow p-3 mb-4 rounded">
                     <p>Day 2</p>
                     <img id="icon2" alt="weather icon" src="">
                     <p>Temp: <span id="temp2"></span> &deg; F</p>
@@ -88,8 +93,8 @@
                     <p>Humidity: <span id="humid2"></span>%</p>
                 </div>
 
-                  <!--Day 3 -->
-                  <div class="col-sm-6 col-md-6 col-lg-2 forecast">
+                <!--Day 3 -->
+                <div class="col-sm-6 col-md-6 col-lg-2 forecast shadow p-3 mb-4 rounded">
                     <p>Day 3</p>
                     <img id="icon3" alt="weather icon" src="">
                     <p>Temp: <span id="temp3"></span> &deg; F</p>
@@ -97,8 +102,8 @@
                     <p>Humidity: <span id="humid3"></span>%</p>
                 </div>
 
-                  <!-- Day 4 -->
-                  <div class="col-sm-6 col-md-6 col-lg-2 forecast">
+                <!-- Day 4 -->
+                <div class="col-sm-6 col-md-6 col-lg-2 forecast shadow p-3 mb-4 rounded">
                     <p>Day 4</p>
                     <img id="icon4" alt="weather icon" src="">
                     <p>Temp: <span id="temp4"></span> &deg; F</p>
@@ -106,8 +111,8 @@
                     <p>Humidity: <span id="humid4"></span>%</p>
                 </div>
 
-                  <!-- Day 5-->
-                  <div class="col-sm-6 col-md-6 col-lg-2 forecast">
+                <!-- Day 5-->
+                <div class="col-sm-6 col-md-6 col-lg-2 forecast shadow p-3 mb-4 rounded">
                     <p>Day 5</p>
                     <img id="icon5" alt="weather icon" src="">
                     <p>Temp: <span id="temp5"></span> &deg; F</p>
@@ -115,23 +120,27 @@
                     <p>Humidity: <span id="humid5"></span>%</p>
                 </div>
 
-              </div>
             </div>
+        </div>
     </div>
 
 
-
-
-
-
+    <!-- jquery-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
+
+    <!-- bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
 
+    <!--moment-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!--javascript-->
     <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

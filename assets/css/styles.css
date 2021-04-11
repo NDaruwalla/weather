@@ -1,15 +1,17 @@
-
+/* overall body styles */
 body {
     font-family: 'Architects Daughter', cursive;
     font-size: 1.75rem;
     line-height: 2rem;
     background-color: lightskyblue;
+    min-height: 250rem;
     }
 
 /* 
 font-family: 'Architects Daughter', cursive;
 font-family: 'Roboto', sans-serif; */
 
+/* jumbotron styling */
 .jumbotron {
     font-family: 'Architects Daughter', cursive;
     color: rgb(2, 4, 68);
@@ -19,10 +21,18 @@ font-family: 'Roboto', sans-serif; */
     border-bottom: 10px solid rgb(2, 4, 68);
 }
 
+/* jumbotron subtitle styling */
 .lead {
  font-size: 2rem;
  padding-top: .5rem;
 }
+
+/* styling for recent searches area */
+.recent {
+ padding: 2rem 0rem;
+}
+
+/* styling for 5 day forecast boxes */
 .forecast {
     border: 2px solid rgb(2, 4, 68);
     margin: auto;
@@ -30,9 +40,11 @@ font-family: 'Roboto', sans-serif; */
     background-color: rgb(2, 4, 68);
     }
 
-
+/* styling for current day box */
 .currentDay {
-    border: 2px solid rgb(2, 4, 68);
+  
     width: 25%;
     margin: auto;
+    padding: 1rem;
+    background-color: rgb(203, 248, 161);
         }
