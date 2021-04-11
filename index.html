@@ -43,31 +43,32 @@
     <div class="container-fluid">
 
         <div class="row p-3">
-            <div class="col-md-4 left-side shadow p-3 mb-4 text-light bg-dark rounded">
+            <div class="citySearch col-md-4 left-side shadow p-3 mb-4 text-light bg-dark rounded">
 
                 <!--search box-->
                 <div id="searchCity">
                     <h2>City Search</h2>
                     <input id="searchField" type="search" placeholder="enter city name here">
-                    <input id="searchButton" type="submit">
+                    <input id="submitButton" type="submit">
                 </div>
 
-                <!--recent searches / search history-->
+                <!--recent searches / search history
                 <div id="recentSearches" class="recent">
                     <h2>Recent Searches</h2>
-                </div>
+                </div>-->
 
             </div>
         </div>
 
         <!--Current day weather details-->
         <div id="search" class="currentDay shadow p-3 mb-4 rounded">
-            <h3>City: <span id="selectArea"></span></h3>
-            <p>Date: <span id="date0"></span></p>
-            <img id="icon0" alt="weather icon" scr="">
-            <p>Humidity: <span id="humid0"></span>%</p>
-            <p>Wind Speed: <span id="wind0"></span> Mph</p>
-            <p>UV Index: <span id="uvIndex0"></span></p>
+            <h3 id="selectArea"></h3>
+            <p>Today</p>
+            <img id="icon0" alt="weather icon" src="">
+            <p id="temp0"></p>
+            <p id="wind0"></p>
+            <p id="humid0"></p>
+            <p id="uvIndex0"></p>
         </div>
 
 
@@ -77,47 +78,52 @@
             <div class="row">
                 <!-- Day 1 -->
                 <div class="col-sm-6 col-md-6 col-lg-2 forecast shadow p-3 mb-4 rounded">
-                    <p>Date: <span id="date1"></span></p>
+                    <p id="date1"></p>
                     <img id="icon1" alt="weather icon" src="">
-                    <p>Temp: <span id="temp1"></span> &deg; F</p>
-                    <p>Wind: <span id="wind1"></span></p>
-                    <p>Humidity: <span id="humid1"></span>%</p>
+                    <p id="temp1"></p>
+                    <p id="wind1"></p>
+                    <p id="humid1"></p>
+                    <p id="uvIndex1"></p>
                 </div>
 
                 <!-- Day 2 -->
                 <div class="col-sm-6 col-md-6 col-lg-2 forecast shadow p-3 mb-4 rounded">
-                    <p>Day 2</p>
+                    <p id="date2"></p>
                     <img id="icon2" alt="weather icon" src="">
-                    <p>Temp: <span id="temp2"></span> &deg; F</p>
-                    <p>Wind: <span id="wind2"></span></p>
-                    <p>Humidity: <span id="humid2"></span>%</p>
+                    <p id="temp2"></p>
+                    <p id="wind2"></p>
+                    <p id="humid2"></p>
+                    <p id="uvIndex2"></p>
                 </div>
 
                 <!--Day 3 -->
                 <div class="col-sm-6 col-md-6 col-lg-2 forecast shadow p-3 mb-4 rounded">
-                    <p>Day 3</p>
+                    <p id="date3"></p>
                     <img id="icon3" alt="weather icon" src="">
-                    <p>Temp: <span id="temp3"></span> &deg; F</p>
-                    <p>Wind: <span id="wind3"></span></p>
-                    <p>Humidity: <span id="humid3"></span>%</p>
+                    <p id="temp3"></p>
+                    <p id="wind3"></p>
+                    <p id="humid3"></p>
+                    <p id="uvIndex3"></p>
                 </div>
 
                 <!-- Day 4 -->
                 <div class="col-sm-6 col-md-6 col-lg-2 forecast shadow p-3 mb-4 rounded">
-                    <p>Day 4</p>
+                    <p id="date4"></p>
                     <img id="icon4" alt="weather icon" src="">
-                    <p>Temp: <span id="temp4"></span> &deg; F</p>
-                    <p>Wind: <span id="wind4"></span></p>
-                    <p>Humidity: <span id="humid4"></span>%</p>
+                    <p id="temp4"></p>
+                    <p id="wind4"></p>
+                    <p id="humid4"></p>
+                    <p id="uvIndex4"></p>
                 </div>
 
                 <!-- Day 5-->
                 <div class="col-sm-6 col-md-6 col-lg-2 forecast shadow p-3 mb-4 rounded">
-                    <p>Day 5</p>
+                    <p id="date5"></p>
                     <img id="icon5" alt="weather icon" src="">
-                    <p>Temp: <span id="temp5"></span> &deg; F</p>
-                    <p>Wind: <span id="wind5"></span></p>
-                    <p>Humidity: <span id="humid5"></span>%</p>
+                    <p id="temp5"></p>
+                    <p id="wind5"></p>
+                    <p id="humid5"></p>
+                    <p id="uvIndex5"></p>
                 </div>
 
             </div>
