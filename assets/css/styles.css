@@ -1,6 +1,6 @@
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Architects Daughter', cursive;
     font-size: 1.75rem;
     line-height: 2rem;
     background-color: lightskyblue;
@@ -18,3 +18,21 @@ font-family: 'Roboto', sans-serif; */
     margin-bottom: 1rem;
     border-bottom: 10px solid rgb(2, 4, 68);
 }
+
+.lead {
+ font-size: 2rem;
+ padding-top: .5rem;
+}
+.forecast {
+    border: 2px solid rgb(2, 4, 68);
+    margin: auto;
+    color:lightskyblue;
+    background-color: rgb(2, 4, 68);
+    }
+
+
+.currentDay {
+    border: 2px solid rgb(2, 4, 68);
+    width: 25%;
+    margin: auto;
+        }
