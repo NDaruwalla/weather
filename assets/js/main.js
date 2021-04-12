@@ -6,6 +6,9 @@ function updateTimer() {
     $(window).on("load", function () {
         setInterval(updateTimer, 1000);
         document.getElementById('searchField').value = 'Boston'; //COMMENT AFTER DONE WITH TESTING
+        getCurrentWeather();
+        // getCurrentWeather();
+           
             });
 
 
@@ -14,15 +17,28 @@ function updateTimer() {
     let searchHTML = document.getElementById("submitButton");
     let lat;
     let lon;
+    
 
+    
+         
     // upon click of submit button, 
-    searchHTML.addEventListener("click", function(){
+    searchHTML.addEventListener("click", getCurrentWeather)
+    
+    function getCurrentWeather(){
+    //let cityHTMLtxt = document.getElementById("searchField").value;   
     //let queryURL ="http://api.openweathermap.org/data/2.5/forecast?q="
+    cityHTML = document.getElementById('searchField');
+    console.log("cityHtml = " + cityHTML.value);
+    //let cityHTML = document.getElementById('searchField').value;   
     let queryURL ="http://api.openweathermap.org/data/2.5/weather?q="
     //let queryURL ="api.openweathermap.org/data/2.5/forecast?q="
-    let cityHTML = document.getElementById("searchField");
-    console.log(cityHTML.value);
+    console.log("tried to do next load");
+    
+    
+    //console.log(cityHTML.value);
+    //let fullURL = queryURL+cityHTML.value+"&appid="+APIkey+"&units=imperial";
     let fullURL = queryURL+cityHTML.value+"&appid="+APIkey+"&units=imperial";
+    //let fullURL = queryURL+"boston"+"&appid="+APIkey+"&units=imperial";
     console.log(fullURL);
     //var myBody;
   
@@ -45,13 +61,13 @@ function updateTimer() {
     
     lat = data.coord.lat;
     lon = data.coord.lon;
-    console.log(humidity);
-    console.log(temp);
-    console.log(windspeed);
-    console.log(icon);
-    console.log(city);
-    console.log(lat);
-    console.log(lon);
+    //console.log(humidity);
+    //console.log(temp);
+    //console.log(windspeed);
+    //console.log(icon);
+    //console.log(city);
+    //console.log(lat);
+    //console.log(lon);
 
     let weatherIconUrl = "http://openweathermap.org/img/wn/"+icon+"@2x.png";
     console.log(weatherIconUrl);
@@ -62,7 +78,7 @@ function updateTimer() {
     //let temp0html = document.getElementById("temp0");
     //temp0html.value = String(temp);
     //console.log(temp0html);
-    console.log(temp);
+    //console.log(temp);
 
     $('#selectArea').text("City = "+city);
 
@@ -77,15 +93,16 @@ function updateTimer() {
     getForecast(lat,lon,city);
 
     });
-});
+  
+};
 
      // upon click of submit button, 
    function getForecast(latp, lonp, cityp){
         //let queryURL ="http://api.openweathermap.org/data/2.5/forecast?q="
         let queryURLForecast ="http://api.openweathermap.org/data/2.5/onecall?lat="
         //let queryURL ="api.openweathermap.org/data/2.5/forecast?q="
-        let cityHTML = document.getElementById("searchField");
-        console.log(cityHTML.value);
+        //let cityHTML = document.getElementById("searchField").value;
+        //console.log(cityHTML.value);
         let fullURLForecast = queryURLForecast+latp+"&lon="+lonp+"&exclude=current,minutely,hourly,alerts"+"&appid="+APIkey+"&units=imperial&cnt=5";
         console.log(fullURLForecast);
         console.log("I ran the second event listener");
@@ -217,7 +234,7 @@ function updateTimer() {
         $('#humid5').text("Humidity = "+humidity5 + "%");
         $('#uvIndex5').text("UVIndex = "+uvIndex5);
 
-
+        
 
 
 

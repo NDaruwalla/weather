@@ -1,10 +1,12 @@
 # 06 Server-Side APIs: Weather Dashboard
 
-## Your Task
 
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+## Description
 
-Use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use `localStorage` to store any persistent data.
+I created a simple weather dashboard using a third-party API that enabled access to weather data by making requests with specific parameters to a URL. The weather dashboard runs in the browser and features dynamically updated HTML and CSS.
+
+[OpenWeather One Call API](https://openweathermap.org/api/one-call-api) was the API used to retrieve weather data for cities. 
+
 
 ## User Story
 
@@ -14,77 +16,51 @@ I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
 
-## Acceptance Criteria
+## Key Features
 
 ```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
+* Upon page loading, the user is presented with a default page that shows the weather for Boston
+* The current day and time displays dynamically without refreshing the page
+* The user enters a city name and recieves the weather for the current day and 5-day forecast for that city
+* An icon illustrates the weather conditions that describe each day
+* The user can view thier search history (not yet enabled)
+* The user is able to view the UV index according to color that indicates whether the conditions are favorable, moderate, or severe (not yet enabled)
+
+```
+## Tools Used
+
+```
+* HTML
+* CSS
+* JQuery
+* Bootstrap
+* Moment.js
+* JavaScript
+* API
+* Google Fonts
+
 ```
 
-## Mock-Up
+## Screen Capture
 
-The following image shows the web application's appearance and functionality:
+The following shows the visual display and functionality of the weather dashboard:
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./Assets/06-server-side-apis-homework-demo.png)
+![A user enters a city name](assets/images/weather1.jpg)
 
-## Grading Requirements
+Screen Capture Continued...
 
-This homework is graded based on the following criteria: 
+![Current weather and 5-day forecast displays](assets/images/weather2.jpg)
 
-### Technical Acceptance Criteria: 40%
 
-* Satisfies all of the above acceptance criteria plus the following:
+## Deployed application
 
-    * Uses the OpenWeather API to retrieve weather data.
+The URL of the deployed application.
+https://ndaruwalla.github.io/weather/
 
-    * Uses `localStorage` to store persistent data.
+## GitHub repository
 
-### Deployment: 32%
+The URL of the GitHub repository that contains my code.
+https://github.com/NDaruwalla/day-weather/
 
-* Application deployed at live URL.
 
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the homework instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
-
-- - -
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+---
