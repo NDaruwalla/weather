@@ -45,11 +45,11 @@ SO THAT I can plan a trip accordingly
 
 The following shows the visual display and functionality of the weather dashboard:
 
-![A user enters a city name](assets/images/weather1.jpg)
+![A user enters a city name](assets/images/weatherA.jpg)
 
 Screen Capture Continued...
 
-![Current weather and 5-day forecast displays](assets/images/weather2.jpg)
+![Current weather and 5-day forecast displays](assets/images/weatherB.jpg)
 
 
 ## Deployed application
@@ -60,7 +60,7 @@ https://ndaruwalla.github.io/weather/
 ## GitHub repository
 
 The URL of the GitHub repository that contains my code.
-https://github.com/NDaruwalla/day-weather/
+https://github.com/NDaruwalla/weather/
 
 
 ---
