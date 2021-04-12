@@ -223,7 +223,7 @@ function updateTimer() {
         let uvIndex5 = dataforecast.daily[5].uvi;
       
 
-        let weatherIconUrl5 = "https://openweathermap.org/img/wn/"+icon5+"@2x.png";
+        let weatherIconUrl5 = "http://openweathermap.org/img/wn/"+icon5+"@2x.png";
         let icon5html = document.getElementById("icon5");
         icon5html.src = weatherIconUrl5;
         
@@ -280,66 +280,4 @@ function updateTimer() {
         })
     };
 
-    
-/*
-
-    function getApi(fullURL) {
-        fetch(fullURL)
-          .then(function (response) {
-            console.log(response);
-            return response.json();
-        });
-      };
-
-      let myBody = getApi(fullURL);
-      console.log(myBody);
-*/
-    /*
-    fetchResult = fetch(fullURL, {
-        method: 'GET',
-        //body: myBody, // string or object
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      });
-    */
-      /*https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch */
-/*
-      fetch(fullURL)
-      .then(response => response.json())
-      //.then(data => console.log(data))
-      .then(data => myBody)
-      ;
-     // response = myBody;
-      console.log(myBody);
-    //fetchJSON = fetchResult.json();
-    //console.log(fetchJSON);
-    //console.log(fetchResult);
-*/
-    
-
-    
-    //{city name}&appid={API key}";
-
-    //Get api data for user selected city for current day 
-    // HTML ids: city- #selectArea, #date0, #icon0, #temp0, #wind0, #humid0, #uvIndex0
-
-
-    //Get api data for user selected city for day 1
-    // HTML ids:  #date1, #icon1, #temp1, #wind1, #humid1
-
-
-    //Get api data for user selected city for day 2
-    // HTML ids:  #date2, #icon2, #temp2, #wind2, #humid2
-
-
-    //Get api data for user selected city for day 3
-    // HTML ids:  #date3, #icon3, #temp3, #wind3, #humid3
-
-
-    //Get api data for user selected city for day 4
-    // HTML ids:  #date4, #icon4, #temp4, #wind4, #
-
-    
-    //Get api data for user selected city for day 5
-    // HTML ids:  #date5, #icon5, #temp5, #wind5, #humid5
+ 
