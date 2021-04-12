@@ -30,7 +30,7 @@ function updateTimer() {
     cityHTML = document.getElementById('searchField');
     console.log("cityHtml = " + cityHTML.value);
     //let cityHTML = document.getElementById('searchField').value;   
-    let queryURL ="http://api.openweathermap.org/data/2.5/weather?q="
+    let queryURL ="https://api.openweathermap.org/data/2.5/weather?q="
     //let queryURL ="api.openweathermap.org/data/2.5/forecast?q="
     console.log("tried to do next load");
     
@@ -69,7 +69,7 @@ function updateTimer() {
     //console.log(lat);
     //console.log(lon);
 
-    let weatherIconUrl = "http://openweathermap.org/img/wn/"+icon+"@2x.png";
+    let weatherIconUrl = "https://openweathermap.org/img/wn/"+icon+"@2x.png";
     console.log(weatherIconUrl);
     let icon0html = document.getElementById("icon0");
     //icon0html.src = weatherIconUrl;
@@ -99,7 +99,7 @@ function updateTimer() {
      // upon click of submit button, 
    function getForecast(latp, lonp, cityp){
         //let queryURL ="http://api.openweathermap.org/data/2.5/forecast?q="
-        let queryURLForecast ="http://api.openweathermap.org/data/2.5/onecall?lat="
+        let queryURLForecast ="https://api.openweathermap.org/data/2.5/onecall?lat="
         //let queryURL ="api.openweathermap.org/data/2.5/forecast?q="
         //let cityHTML = document.getElementById("searchField").value;
         //console.log(cityHTML.value);
@@ -136,7 +136,7 @@ function updateTimer() {
         //console.log(humidity1);
         //console.log(uvIndex1);
 
-        let weatherIconUrl1 = "http://openweathermap.org/img/wn/"+icon1+"@2x.png";
+        let weatherIconUrl1 = "https://openweathermap.org/img/wn/"+icon1+"@2x.png";
         //console.log(weatherIconUrl1);
         let icon1html = document.getElementById("icon1");
         icon1html.src = weatherIconUrl1;
@@ -158,7 +158,7 @@ function updateTimer() {
         let uvIndex2 = dataforecast.daily[2].uvi;
       
 
-        let weatherIconUrl2 = "http://openweathermap.org/img/wn/"+icon2+"@2x.png";
+        let weatherIconUrl2 = "https://openweathermap.org/img/wn/"+icon2+"@2x.png";
         let icon2html = document.getElementById("icon2");
         icon2html.src = weatherIconUrl2;
         
@@ -179,7 +179,7 @@ function updateTimer() {
         let uvIndex3 = dataforecast.daily[3].uvi;
       
 
-        let weatherIconUrl3 = "http://openweathermap.org/img/wn/"+icon3+"@2x.png";
+        let weatherIconUrl3 = "https://openweathermap.org/img/wn/"+icon3+"@2x.png";
         let icon3html = document.getElementById("icon3");
         icon3html.src = weatherIconUrl3;
         
@@ -201,7 +201,7 @@ function updateTimer() {
         let uvIndex4 = dataforecast.daily[4].uvi;
       
 
-        let weatherIconUrl4 = "http://openweathermap.org/img/wn/"+icon4+"@2x.png";
+        let weatherIconUrl4 = "https://openweathermap.org/img/wn/"+icon4+"@2x.png";
         let icon4html = document.getElementById("icon4");
         icon4html.src = weatherIconUrl4;
         
@@ -223,7 +223,7 @@ function updateTimer() {
         let uvIndex5 = dataforecast.daily[5].uvi;
       
 
-        let weatherIconUrl5 = "http://openweathermap.org/img/wn/"+icon5+"@2x.png";
+        let weatherIconUrl5 = "https://openweathermap.org/img/wn/"+icon5+"@2x.png";
         let icon5html = document.getElementById("icon5");
         icon5html.src = weatherIconUrl5;
         
