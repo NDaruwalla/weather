@@ -42,12 +42,17 @@ font-family: 'Roboto', sans-serif; */
 }
 
 /* styling for current day box */
+#selectArea {
+    font-weight: bolder;
+}
+
 .currentDay {
   width: 40%;
   margin: auto;
   padding: 1rem;
   background-color: rgb(203, 248, 161);
   text-align: center;
+  
 }
 
 /* styling for dynamic uv index text color */
