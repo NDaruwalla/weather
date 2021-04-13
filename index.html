@@ -32,7 +32,7 @@
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
                 <h1 class="display-4">What's the weather like?</h1>
-                <p class="lead">Enter a <u>city</u> <u>name</u> to view the current weather<br>and 5-day weather forecast.</p>
+                <p class="lead">Enter a <u>city</u> <u>name</u> to view the current weather<br>and 5-day forecast.</p>
                 <p id="currentDay"></p>
             </div>
         </div>
@@ -49,16 +49,19 @@
                 <div id="searchCity">
                     <h2>City Search</h2>
                     <input id="searchField" type="search" placeholder="enter city name here">
-                    <input id="submitButton" type="submit">
+                    <input id="submitButton" type="submit"> 
+                
+                    <!--test for search history save (original code)        
+                    <input class="inp" type="text" list="searchdata">
+                    <button class="search">Search</button>
+                    <datalist id="searchdata"></datalist> --> 
+
+                    
                 </div>
-
-                <!--recent searches / search history
-                <div id="recentSearches" class="recent">
-                    <h2>Recent Searches</h2>
-                </div>-->
-
             </div>
-        </div>
+
+         </div>
+    </div>
 
         <!--Current day weather details-->
         <div id="search" class="currentDay shadow p-3 mb-4 rounded">
@@ -70,7 +73,7 @@
             <p id="humid0"></p>
             <p id="uvIndex0"></p>
         </div>
-
+    
 
         <!-- Forecast for 5 Days -->
         <div class="container-fluid">

@@ -1,11 +1,11 @@
 /* overall body styles */
 body {
-    font-family: 'Architects Daughter', cursive;
-    font-size: 1.75rem;
-    line-height: 2rem;
-    background-color: lightskyblue;
-    min-height: 250rem;
-    }
+  font-family: "Architects Daughter", cursive;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  background-color: lightskyblue;
+  min-height: 250rem;
+}
 
 /* 
 font-family: 'Architects Daughter', cursive;
@@ -13,45 +13,55 @@ font-family: 'Roboto', sans-serif; */
 
 /* jumbotron styling */
 .jumbotron {
-    font-family: 'Architects Daughter', cursive;
-    color: rgb(2, 4, 68);
-    background-color: lightskyblue;
-    text-align: center;
-    margin-bottom: 1rem;
-    border-bottom: 10px solid rgb(2, 4, 68);
+  font-family: "Architects Daughter", cursive;
+  color: rgb(2, 4, 68);
+  background-color: lightskyblue;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-bottom: 10px solid rgb(2, 4, 68);
 }
 
 /* jumbotron subtitle styling */
 .lead {
- font-size: 2rem;
- padding-top: .5rem;
+  font-size: 2rem;
+  padding-top: 0.5rem;
 }
 
 .citySearch {
-    width: 40%;
-    margin: auto;
-    text-align: center;
-        }
-
-/* styling for recent searches area */
-.recent {
- padding: 2rem 0rem;
+  width: 40%;
+  margin: auto;
+  text-align: center;
 }
 
 /* styling for 5 day forecast boxes */
 .forecast {
-    border: 2px solid rgb(2, 4, 68);
-    margin: auto;
-    color:lightskyblue;
-    background-color: rgb(2, 4, 68);
-    }
-
+  border: 2px solid rgb(2, 4, 68);
+  margin: auto;
+  color: lightskyblue;
+  background-color: rgb(2, 4, 68);
+}
 
 /* styling for current day box */
 .currentDay {
-    width: 40%;
-    margin: auto;
-    padding: 1rem;
-    background-color: rgb(203, 248, 161);
-    text-align: center;
-        }
+  width: 40%;
+  margin: auto;
+  padding: 1rem;
+  background-color: rgb(203, 248, 161);
+  text-align: center;
+}
+
+/* styling for dynamic uv index text color */
+.uvLow {
+  color: green;
+  font-weight: bolder;
+}
+
+.uvMed {
+  color: rgb(229, 231, 77);
+  font-weight: bolder;
+}
+
+.uvHigh {
+  color: rgb(231, 33, 33);
+  font-weight: bolder;
+}

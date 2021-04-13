@@ -148,6 +148,8 @@ function updateTimer() {
         $('#humid1').text("Humidity = "+humidity1 + "%");
         $('#uvIndex1').text("UVIndex = "+uvIndex1);
 
+        
+
         /* day 2 */ 
         let timestamp2 = dataforecast.daily[2].dt
         let date2 = new Date(timestamp2 * 1000);
@@ -234,17 +236,14 @@ function updateTimer() {
         $('#humid5').text("Humidity = "+humidity5 + "%");
         $('#uvIndex5').text("UVIndex = "+uvIndex5);
 
-        
-
-
-
-
-       
-       
-       
-       
-       
-       
+        updateColors1(val1 = uvIndex1);
+        updateColors2(val1 = uvIndex2);
+        updateColors3(val1 = uvIndex3);
+        updateColors4(val1 = uvIndex4);
+        updateColors5(val1 = uvIndex5);
+        // console.log(uvIndex1);
+        // console.log(uvIndex2);
+        // console.log(uvIndex3);
        
         /*
         let city = dataforecast.name;
@@ -280,4 +279,109 @@ function updateTimer() {
         })
     };
 
- 
+
+    // test for search history save; code from https://stackoverflow.com/questions/63546745/save-input-search-history
+    // var searchHistory = (localStorage.searchHistory) ? JSON.parse(localStorage.searchHistory) : [];
+    // document.querySelector(".search").addEventListener("click", () => {
+    //   searchHistory.push(document.querySelector(".inp").value);
+    //   localStorage.searchHistory = JSON.stringify(searchHistory);
+    // });
+    // document.querySelector(".inp").addEventListener("focus", () => {
+    //   var data = document.querySelector("datalist#searchdata");
+    //   data.innerHTML = "";
+    //   searchHistory.forEach((search) => {
+    //     data.innerHTML = "<option>" + data.innerHTML;
+    //     data.querySelector("option").innerText = search;
+    //   });
+    // });  
+
+
+// If UV Index is less than or equal to 2, color UV Index GREEN
+// If UV Index is greater than 2 and less than 6, color UV Index YELLOW
+// If UV Index is greater than 5, color UV Index RED
+
+function updateColors1 (val1){
+    if (val1 <= 2.0 ) {
+        document.getElementById('uvIndex1').className = 'uvLow';
+      //  console.log("I went to < 2, my val1 is " + toString(val1));
+    };
+    
+    if (val1 >2.0 && val1 <6.0  ) {
+        document.getElementById('uvIndex1').className = 'uvMed';
+       // console.log("I went to between 2 & 6, my val1 is " + toString(val1));
+    };
+    
+    if (val1 > 6.0 ) {
+        document.getElementById('uvIndex1').className = 'uvHigh';
+       // console.log("I went to > 6, my val1 is " + toString(val1));
+    };
+};
+
+function updateColors2 (val1){
+    if (val1 <= 2.0 ) {
+        document.getElementById('uvIndex2').className = 'uvLow';
+       // console.log("I went to < 2, my val1 is " + toString(val1));
+    };
+    
+    if (val1 >2.0 && val1 <6.0  ) {
+        document.getElementById('uvIndex2').className = 'uvMed';
+        //console.log("I went to between 2 & 6, my val1 is " + toString(val1));
+    };
+    
+    if (val1 > 6.0 ) {
+        document.getElementById('uvIndex2').className = 'uvHigh';
+       // console.log("I went to > 6, my val1 is " + toString(val1));
+    };
+};
+
+function updateColors3 (val1){
+    if (val1 <= 2.0 ) {
+        document.getElementById('uvIndex3').className = 'uvLow';
+       // console.log("I went to < 2, my val1 is " + toString(val1));
+    };
+    
+    if (val1 >2.0 && val1 <6.0  ) {
+        document.getElementById('uvIndex3').className = 'uvMed';
+        //console.log("I went to between 2 & 6, my val1 is " + toString(val1));
+    };
+    
+    if (val1 > 6.0 ) {
+        document.getElementById('uvIndex3').className = 'uvHigh';
+       // console.log("I went to > 6, my val1 is " + toString(val1));
+    };
+};
+
+function updateColors4 (val1){
+    if (val1 <= 2.0 ) {
+        document.getElementById('uvIndex4').className = 'uvLow';
+       // console.log("I went to < 2, my val1 is " + toString(val1));
+    };
+    
+    if (val1 >2.0 && val1 <6.0  ) {
+        document.getElementById('uvIndex4').className = 'uvMed';
+        //console.log("I went to between 2 & 6, my val1 is " + toString(val1));
+    };
+    
+    if (val1 > 6.0 ) {
+        document.getElementById('uvIndex4').className = 'uvHigh';
+       // console.log("I went to > 6, my val1 is " + toString(val1));
+    };
+};
+
+
+function updateColors5 (val1){
+    if (val1 <= 2.0 ) {
+        document.getElementById('uvIndex5').className = 'uvLow';
+       // console.log("I went to < 2, my val1 is " + toString(val1));
+    };
+    
+    if (val1 >2.0 && val1 <6.0  ) {
+        document.getElementById('uvIndex5').className = 'uvMed';
+        //console.log("I went to between 2 & 6, my val1 is " + toString(val1));
+    };
+    
+    if (val1 > 6.0 ) {
+        document.getElementById('uvIndex5').className = 'uvHigh';
+       // console.log("I went to > 6, my val1 is " + toString(val1));
+    };
+};
