@@ -23,8 +23,8 @@ SO THAT I can plan a trip accordingly
 * The current day and time displays dynamically without refreshing the page
 * The user enters a city name and recieves the weather for the current day and 5-day forecast for that city
 * An icon illustrates the weather conditions that describe each day
+* The user is able to view the UV index according to color that indicates whether the conditions are favorable, moderate, or severe
 * The user can view thier search history (not yet enabled)
-* The user is able to view the UV index according to color that indicates whether the conditions are favorable, moderate, or severe (not yet enabled)
 
 ```
 ## Tools Used
