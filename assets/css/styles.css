@@ -19,6 +19,8 @@ font-family: 'Roboto', sans-serif; */
   text-align: center;
   margin-bottom: 1rem;
   border-bottom: 10px solid rgb(2, 4, 68);
+  background-image: url("../images/bkg.jpg");
+  background-size: cover;
 }
 
 /* jumbotron subtitle styling */
@@ -50,7 +52,7 @@ font-family: 'Roboto', sans-serif; */
   width: 40%;
   margin: auto;
   padding: 1rem;
-  background-color: rgb(203, 248, 161);
+  background-color: whitesmoke;
   text-align: center;
   
 }
