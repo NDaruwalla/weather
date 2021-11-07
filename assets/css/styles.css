@@ -21,6 +21,7 @@ font-family: 'Roboto', sans-serif; */
   border-bottom: 10px solid rgb(2, 4, 68);
   background-image: url("../images/bkg.jpg");
   background-size: cover;
+
 }
 
 /* jumbotron subtitle styling */
@@ -30,9 +31,10 @@ font-family: 'Roboto', sans-serif; */
 }
 
 .citySearch {
-  width: 40%;
+  /* width: 75%; */
   margin: auto;
   text-align: center;
+  background-color: rgb(6, 6, 82);
 }
 
 /* styling for 5 day forecast boxes */
